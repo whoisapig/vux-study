@@ -1,13 +1,13 @@
 <template>
   <div>
-  <x-header :right-options="{showMore: true}" @on-click-more="showMenus = true">首页</x-header>
-  <actionsheet
-    v-model="showMenus"
-    :show-cancel="true"
-    :menus="menus"
-    @on-click-menu="click"
-    @on-after-hide="log('after hide')"
-    @on-after-show="log('after show')"></actionsheet>
+    <x-header :right-options="{showMore: true}" @on-click-more="showMenus = true">首页</x-header>
+    <actionsheet
+      v-model="showMenus"
+      :show-cancel="true"
+      :menus="menus"
+      @on-click-menu="click"
+      @on-after-hide="log('after hide')"
+      @on-after-show="log('after show')"></actionsheet>
   </div>
 </template>
 
@@ -15,7 +15,6 @@
   import { XHeader, Actionsheet, ButtonTab, ButtonTabItem } from 'vux'
 
   export default {
-
     components: {
       XHeader,
       Actionsheet,
